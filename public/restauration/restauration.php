@@ -6,7 +6,7 @@
 </head>
 <body>
     <header>
-        <img src="../img/logo.png" alt="logo">
+        <img src="../../img/logo.png" alt="logo">
         <ul>
             <li>Accueil</li>
             <li>Restauration</li>

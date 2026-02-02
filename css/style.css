@@ -18,17 +18,105 @@
 body {
     color: var(--white);
     background-image: url("../img/accueil.png");
+    background-attachment: fixed;
+}
+
+.hero{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-header{
+.presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.txt_pres{
+    color: var(--beige);
+    -webkit-text-stroke: 2px var(--carbone);
+    font-size: 2em;
+    font-family: fantasy;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    width: 70%;
+    text-align: center;
+    height: 100%;
+}
+
+.txt_decouvrir{
+    color: var(--beige);
+    -webkit-text-stroke: 2px var(--carbone);
+    font-size: 2em;
+    font-family: fantasy;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: -3em;
+}
+
+.presentation ul{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.presentation ul li{
+    list-style: none;
+    flex: 0 1 250px;
+    display: flex;
+}
+
+.presentation ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--beige);
+    color: var(--carbone);
+    padding: 10px 10px;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px solid var(--carbone);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    min-height: 80px;
+}
+
+.presentation ul li a:hover{
+    background-color: var(--carbone);
+    color: var(--beige);
+    transform: translateY(-5px);
+}
+
+header {
     display: flex;
     background-color: var(--carbone);
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    transform: translateY(0); /* Affiche le header au scroll */
 }
 
 header img{
@@ -57,6 +145,6 @@ h1{
     font-style: normal;
 }
 
-img{
+img {
     scale: 0.8;
 }
