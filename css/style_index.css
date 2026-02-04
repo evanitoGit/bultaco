@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: 'BultacoCustom';
+    src: url('../assets/fonts/FUENTE_BULTACO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --sepia: #ccaf92;
+    --dark-gray: #5c5b5b;
+    --carbone: #474747;
+    --black: #000000;
+    --white: #ede8e8;
+    --beige: #FFF2E3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    color: var(--white);
+    background-image: url("../img/accueil.png");
+    background-attachment: fixed;
+}
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--beige);
+}
+
+.txt_pres{
+    color: var(--carbone);
+    font-size: 2em;
+    font-family: fantasy;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    width: 70%;
+    text-align: center;
+    height: 100%;
+}
+
+.txt_decouvrir{
+    color: var(--carbone);
+    font-size: 2em;
+    font-family: fantasy;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin-bottom: -3em;
+}
+
+.presentation ul{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    width: 100%;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.presentation ul li{
+    list-style: none;
+    flex: 0 1 250px;
+    display: flex;
+}
+
+.presentation ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: var(--beige);
+    color: var(--carbone);
+    padding: 10px 10px;
+    border-radius: 50px;
+    text-align: center;
+    border: 3px solid var(--carbone);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-height: 80px;
+}
+
+.presentation ul li a:hover{
+    background-color: var(--carbone);
+    color: var(--beige);
+    transform: translateY(-5px);
+}
+
+header {
+    display: flex;
+    background-color: var(--carbone);
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: -5%;
+    width: 105%;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+header.scrolled {
+    transform: translateY(0);
+}
+
+header img{
+    scale: 0.6;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70vh;
+    gap: 10%;
+    margin-left: -15%;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    color: var(--beige);
+    text-transform: uppercase;
+}
+
+header .button_co{
+    color: var(--carbone);
+    background-color: var(--beige);
+    width: 10%;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 3%;
+}
+
+header .button_co:hover{
+    background-color: var(--carbone);
+    color: var(--beige);
+    border: 2px solid var(--beige);
+}
+
+h1{
+    color: var(--carbone);
+    font-size: 5em;
+    font-family: "BultacoCustom", serif;
+    text-transform: uppercase;
+}
+
+img {
+    scale: 0.8;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+}
+
+.admin-title {
+    color: var(--carbone);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 200px;
+    padding: 15px;
+    font-size: 1.1em;
+    border: 2px solid var(--carbone);
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    resize: vertical;
+}
+
+.btn-update {
+    background-color: var(--carbone);
+    color: var(--beige);
+    padding: 15px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-update:hover {
+    background-color: var(--beige);
+    color: var(--carbone);
+    border: 2px solid var(--carbone);
+}
+
+.message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.preview-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--carbone);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.preview-link:hover {
+    text-decoration: underline;
+}

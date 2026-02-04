@@ -11,19 +11,22 @@ $texte = $stmt->fetch(PDO::FETCH_ASSOC);
 <head>
     <meta charset="UTF-8">
     <title>Club Bultaco - Escuyer</title>
-    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/style_index.css">
 </head>
 <body>
     <header class="nav">
         <img src="../../img/logo.png" alt="logo">
         <ul>
-            <li>Accueil</li>
-            <li>Restauration</li>
-            <li>Pièces détachées</li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="../restauration/restauration.php">Restauration</a></li>
+            <li><a href="../pieces/pieces.php">Pièces détachées</a></li>
             <li>Emblèmes</li>
         </ul>
-        <a href="../../login.php">Connexion Admin</a>
+        <a href="../../login.php?redirect=admin" class="button_co">CONNEXION ADMIN</a>
     </header>
+    <div class="container">
+
+    </div>
     <section class="hero">
         <h1>Club Bultaco</h1>
         <img src="../../img/logo_rond.png" alt="logo">
@@ -34,7 +37,7 @@ $texte = $stmt->fetch(PDO::FETCH_ASSOC);
             <p class="txt_decouvrir">Allez on vous invite, venez découvrir :</p>
             <ul>
                 <li><a href="../restauration/restauration.php">Nos restaurations de bécanes</a></li>
-                <li><a href="">Notre liste de pièces détachées</a></li>
+                <li><a href="../pieces/pieces.php">Notre liste de pièces détachées</a></li>
                 <li><a href="">Les modèles emblématiques</a></li>
                 <li><a href="">Les pilotes emblématiques</a></li>
             </ul>
