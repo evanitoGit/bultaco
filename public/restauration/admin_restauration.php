@@ -146,8 +146,8 @@ $photosDroite = $stmtDroite->fetchAll(PDO::FETCH_ASSOC);
             <div class="form-group">
                 <label for="colonne" class="form-label">Colonne :</label>
                 <select name="colonne" id="colonne" required>
-                    <option value="gauche">Colonne gauche</option>
-                    <option value="droite">Colonne droite</option>
+                    <option value="gauche">Avant</option>
+                    <option value="droite">Après</option>
                 </select>
             </div>
 
@@ -164,7 +164,7 @@ $photosDroite = $stmtDroite->fetchAll(PDO::FETCH_ASSOC);
         <h2 class="section-title">Gérer les photos existantes</h2>
         <div class="photos-admin-container">
             <div class="colonne-admin">
-                <h3>Colonne Gauche</h3>
+                <h3>Colonne Avant</h3>
                 <?php foreach ($photosGauche as $photo): ?>
                     <div class="photo-admin-item">
                         <img src="<?php echo htmlspecialchars($photo['image_path']); ?>" alt="<?php echo htmlspecialchars($photo['nom_modele']); ?>">
@@ -196,7 +196,7 @@ $photosDroite = $stmtDroite->fetchAll(PDO::FETCH_ASSOC);
             </div>
 
             <div class="colonne-admin">
-                <h3>Colonne Droite</h3>
+                <h3>Colonne Après</h3>
                 <?php foreach ($photosDroite as $photo): ?>
                     <div class="photo-admin-item">
                         <img src="<?php echo htmlspecialchars($photo['image_path']); ?>" alt="<?php echo htmlspecialchars($photo['nom_modele']); ?>">
@@ -230,8 +230,6 @@ $photosDroite = $stmtDroite->fetchAll(PDO::FETCH_ASSOC);
     </div>
 
     <div class="admin-links">
-        <a href="restauration.php" class="admin-link">Voir la page visiteur</a>
-        <a href="../accueil/index_admin.php" class="admin-link">Gérer l'accueil</a>
         <a href="../../logout.php" class="admin-link">Déconnexion</a>
     </div>
 </div>

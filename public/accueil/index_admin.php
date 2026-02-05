@@ -63,8 +63,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $isAdmin) {
         </form>
     </div>
     <div class="admin-links">
-        <a href="index.php" class="admin-link">Voir la page visiteur</a>
-        <a href="../restauration/admin_restauration.php" class="admin-link">Gérer la restauration</a>
         <a href="../../logout.php" class="admin-link">Déconnexion</a>
     </div>
 <?php endif; ?>

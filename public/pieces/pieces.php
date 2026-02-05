@@ -40,7 +40,7 @@ $toutesLesPieces = $stmtAllPieces->fetchAll(PDO::FETCH_ASSOC);
         <li><a href="../accueil/index.php">ACCUEIL</a></li>
         <li><a href="../restauration/restauration.php">RESTAURATION</a></li>
         <li><a href="">PIÈCES DÉTACHÉES</a></li>
-        <li>EMBLÈMES</li>
+        <li><a href="../emblemes/emblemes.php">EMBLÈMES</a></li>
     </ul>
     <a href="../../login.php?redirect=admin_pieces" class="button_co">CONNEXION ADMIN</a>
 </header>

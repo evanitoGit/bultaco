@@ -24,6 +24,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             case 'admin_pieces':
                 header('Location: public/pieces/admin_pieces.php');
                 break;
+            case 'admin_emblemes':
+                header('Location: public/emblemes/admin_emblemes.php');
+                break;
+            case 'index':
+                header('Location: public/accueil/index_admin.php');
+                break;
             default:
                 header('Location: admin.php');
         }

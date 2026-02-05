@@ -352,8 +352,6 @@ $categories = $stmtCategories->fetchAll(PDO::FETCH_ASSOC);
     </div>
 
     <div class="admin-links">
-        <a href="pieces.php" class="admin-link">Voir la page pièces détachées</a>
-        <a href="../../admin.php" class="admin-link">Accueil Admin</a>
         <a href="../../logout.php" class="admin-link">Déconnexion</a>
     </div>
 </div>

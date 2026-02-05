@@ -20,9 +20,9 @@ $texte = $stmt->fetch(PDO::FETCH_ASSOC);
             <li><a href="#">Accueil</a></li>
             <li><a href="../restauration/restauration.php">Restauration</a></li>
             <li><a href="../pieces/pieces.php">Pièces détachées</a></li>
-            <li>Emblèmes</li>
+            <li><a href="../emblemes/emblemes.php">Emblèmes</a></li>
         </ul>
-        <a href="../../login.php?redirect=admin" class="button_co">CONNEXION ADMIN</a>
+        <a href="../../login.php?redirect=index" class="button_co">CONNEXION ADMIN</a>
     </header>
     <div class="container">
 

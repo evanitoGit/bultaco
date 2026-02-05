@@ -21,14 +21,12 @@ body {
     color: var(--carbone);
 }
 
-/* Container principal */
 .admin-container {
     max-width: 1400px;
     margin: 50px auto;
     padding: 40px;
 }
 
-/* Sections */
 .admin-section {
     background-color: white;
     padding: 30px;
@@ -37,7 +35,6 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Titres */
 .admin-title {
     color: var(--carbone);
     text-align: center;
@@ -57,7 +54,6 @@ body {
     font-weight: 700;
 }
 
-/* Formulaires */
 .form-group {
     margin-bottom: 20px;
 }
@@ -483,4 +479,91 @@ textarea:focus {
     color: #999;
     font-style: italic;
     padding: 20px;
+}
+
+.emblemes-admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.embleme-admin-card {
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.embleme-admin-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.no-image-admin-embleme {
+    width: 100%;
+    height: 250px;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    color: #999;
+}
+
+.embleme-admin-info {
+    padding: 20px;
+}
+
+.embleme-admin-info h3 {
+    color: var(--carbone);
+    font-size: 1.5em;
+    margin-bottom: 8px;
+}
+
+.embleme-meta {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.embleme-dates {
+    color: #888;
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+.embleme-admin-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.embleme-admin-actions .btn {
+    flex: 1;
+    min-width: 120px;
+}
+
+.edit-form-embleme {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 2px solid var(--carbone);
+}
+
+.edit-form-embleme .form-group {
+    margin-bottom: 12px;
+}
+
+.edit-form-embleme textarea {
+    min-height: 80px;
+}
+
+.no-items-admin {
+    text-align: center;
+    color: #999;
+    font-style: italic;
+    padding: 40px;
 }
