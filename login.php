@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once realpath(__DIR__ . '/../../config.php');
+require_once realpath(__DIR__ . 'config.php');
 
 $error = false;
 $redirect = isset($_GET['redirect']) ? $_GET['redirect'] : 'admin';
