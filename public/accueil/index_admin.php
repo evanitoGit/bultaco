@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once '../../config.php';
+require_once realpath(__DIR__ . '/../../config.php');
 
 // Vérification simple (à améliorer avec une vraie authentification)
 $isAdmin = isset($_SESSION['admin']) && $_SESSION['admin'] === true;

@@ -1,5 +1,5 @@
 <?php
-require_once '../../config.php';
+require_once realpath(__DIR__ . '/../../config.php');
 
 $stmt = $pdo->prepare("SELECT contenu FROM textes WHERE section = 'pieces_detachees'");
 $stmt->execute();
