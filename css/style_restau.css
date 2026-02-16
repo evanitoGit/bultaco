@@ -55,12 +55,17 @@ header ul{
     flex-direction: row;
     justify-content: center;
     width: 70vh;
-    gap: 10%;
+    gap: 5%;
     margin-left: -15%;
 }
 
 header ul li{
     list-style-type: none;
+}
+
+header ul li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 header ul li a{
@@ -189,10 +194,6 @@ h1{
     display: block;
 }
 
-.photo-item:hover img {
-    transform: scale(1.02);
-}
-
 .search-container {
     position: relative;
     width: 100%;
@@ -274,6 +275,22 @@ h1{
 .photo-item.highlighted {
     animation: highlight-pulse 1s ease-in-out 3;
     box-shadow: 0 0 30px rgba(255, 235, 59, 0.8);
+}
+
+.photo-item.highlighted {
+    animation: highlight-pulse 1s ease-in-out 3;
+    box-shadow: 0 0 30px rgba(255, 235, 59, 0.8);
+}
+
+@keyframes highlight-pulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 30px rgba(255, 235, 59, 0.8);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 50px rgba(255, 235, 59, 1);
+    }
 }
 
 @keyframes highlight-pulse {

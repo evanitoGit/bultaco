@@ -15,12 +15,13 @@ $texte = $stmt->fetch(PDO::FETCH_ASSOC);
 </head>
 <body>
     <header class="nav">
-        <img src="../../img/logo.png" alt="logo">
+        <a href="../../public/accueil/index.php"><img src="../../img/logo.png" alt="logo"></a>
         <ul>
             <li><a href="#">Accueil</a></li>
-            <li><a href="../restauration/restauration.php">Restauration</a></li>
-            <li><a href="../pieces/pieces.php">Pièces détachées</a></li>
-            <li><a href="../emblemes/emblemes.php">Emblèmes</a></li>
+            <li><a href="../restauration/restauration.php">RESTAURATION</a></li>
+            <li><a href="../pieces/pieces.php">PIÈCES DÉTACHÉES</a></li>
+            <li><a href="../emblemes/emblemes.php">EMBLÈMES</a></li>
+            <li><a href="../press/pressbook.php">PRESSBOOK</a></li>
         </ul>
         <a href="../../login.php?redirect=index" class="button_co">CONNEXION ADMIN</a>
     </header>

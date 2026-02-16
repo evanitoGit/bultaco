@@ -30,6 +30,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             case 'index':
                 header('Location: public/accueil/index_admin.php');
                 break;
+            case 'admin_pressbook':
+                header('Location: public/press/pressbook_admin.php');
+                break;
             default:
                 header('Location: admin.php');
         }

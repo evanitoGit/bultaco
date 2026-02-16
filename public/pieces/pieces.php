@@ -35,12 +35,13 @@ $toutesLesPieces = $stmtAllPieces->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 <header class="nav">
-    <img src="../../img/logo.png" alt="logo">
+    <a href="../../public/accueil/index.php"><img src="../../img/logo.png" alt="logo"></a>
     <ul>
         <li><a href="../accueil/index.php">ACCUEIL</a></li>
         <li><a href="../restauration/restauration.php">RESTAURATION</a></li>
-        <li><a href="">PIÈCES DÉTACHÉES</a></li>
+        <li><a href="#">PIÈCES DÉTACHÉES</a></li>
         <li><a href="../emblemes/emblemes.php">EMBLÈMES</a></li>
+        <li><a href="../press/pressbook.php">PRESSBOOK</a></li>
     </ul>
     <a href="../../login.php?redirect=admin_pieces" class="button_co">CONNEXION ADMIN</a>
 </header>
@@ -50,7 +51,7 @@ $toutesLesPieces = $stmtAllPieces->fetchAll(PDO::FETCH_ASSOC);
 <div class="container">
     <section class="hero">
         <p><?php echo htmlspecialchars($texte['contenu']); ?></p>
-        <h2>↓ CATALOGUE DES PIÈCES ↓</h2>
+        <h2>CATALOGUE DES PIÈCES</h2>
         <div class="search-container">
             <label for="searchInput"></label><input type="text" id="searchInput" placeholder="Rechercher une pièce" autocomplete="off">
             <div id="searchResults" class="search-results"></div>

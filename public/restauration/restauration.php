@@ -26,12 +26,13 @@ $tousLesModeles = $stmtAll->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
     <header class="nav">
-        <img src="../../img/logo.png" alt="logo">
+        <a href="../../public/accueil/index.php"><img src="../../img/logo.png" alt="logo"></a>
         <ul>
             <li><a href="../accueil/index.php">ACCUEIL</a></li>
             <li><a href="#">RESTAURATION</a></li>
             <li><a href="../pieces/pieces.php">PIÈCES DÉTACHÉES</a></li>
             <li><a href="../emblemes/emblemes.php">EMBLÈMES</a></li>
+            <li><a href="../press/pressbook.php">PRESSBOOK</a></li>
         </ul>
         <a href="../../login.php?redirect=admin_restauration" class="button_co">CONNEXION ADMIN</a>
     </header>
@@ -41,7 +42,7 @@ $tousLesModeles = $stmtAll->fetchAll(PDO::FETCH_ASSOC);
     <div class="container">
         <section class="hero">
             <p><?php echo htmlspecialchars($texte['contenu']); ?></p>
-            <h2>↓ QUELQUES EXEMPLES ↓</h2>
+            <h2>QUELQUES EXEMPLES</h2>
             <div class="search-container">
                 <label for="searchInput"></label><input type="text" id="searchInput" placeholder="Rechercher un modèle" autocomplete="off">
                 <div id="searchResults" class="search-results"></div>
@@ -51,7 +52,7 @@ $tousLesModeles = $stmtAll->fetchAll(PDO::FETCH_ASSOC);
             <div class="photos-container">
                 <div class="colonne-gauche">
                     <?php foreach ($photosGauche as $photo): ?>
-                        <div class="photo-item">
+                        <div class="photo-item" data-id="<?php echo $photo['id']; ?>" data-nom="<?php echo strtolower(htmlspecialchars($photo['nom_modele'])); ?>">
                             <img src="<?php echo htmlspecialchars($photo['image_path']); ?>" alt="<?php echo htmlspecialchars($photo['nom_modele']); ?>">
                             <div class="photo-label"><?php echo htmlspecialchars($photo['nom_modele']); ?></div>
                         </div>
@@ -59,7 +60,7 @@ $tousLesModeles = $stmtAll->fetchAll(PDO::FETCH_ASSOC);
                 </div>
                 <div class="colonne-droite">
                     <?php foreach ($photosDroite as $photo): ?>
-                        <div class="photo-item">
+                        <div class="photo-item" data-id="<?php echo $photo['id']; ?>" data-nom="<?php echo strtolower(htmlspecialchars($photo['nom_modele'])); ?>">
                             <img src="<?php echo htmlspecialchars($photo['image_path']); ?>" alt="<?php echo htmlspecialchars($photo['nom_modele']); ?>">
                             <div class="photo-label"><?php echo htmlspecialchars($photo['nom_modele']); ?></div>
                         </div>

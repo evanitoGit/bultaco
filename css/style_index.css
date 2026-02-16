@@ -69,7 +69,8 @@ body {
     font-optical-sizing: auto;
     font-weight: bold;
     font-style: normal;
-    margin-bottom: -3em;
+    margin-bottom: -5em;
+    margin-top: -10%;
 }
 
 .presentation ul{
@@ -137,12 +138,17 @@ header ul{
     flex-direction: row;
     justify-content: center;
     width: 70vh;
-    gap: 10%;
+    gap: 5%;
     margin-left: -15%;
 }
 
 header ul li{
     list-style-type: none;
+}
+
+header ul li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
 }
 
 header ul li a{
@@ -169,10 +175,12 @@ header .button_co:hover{
 }
 
 h1{
-    color: var(--carbone);
+    color: var(--beige);
+    -webkit-text-stroke: 4px var(--carbone);
     font-size: 5em;
-    font-family: "BultacoCustom", serif;
     text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
 }
 
 img {
