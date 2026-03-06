@@ -47,7 +47,8 @@ body {
     flex-direction: column;
     width: 100%;
     min-height: calc(100vh - 75px);
-    background-color: var(--beige);
+    background: url('../img/logo.png') no-repeat;
+    background-size: cover;
     padding-bottom: 4em;
     border-top: 3px solid var(--carbone);
 }
@@ -55,7 +56,7 @@ body {
 .txt_pres{
     color: var(--carbone);
     font-size: 2em;
-    width: 70%;
+    width: 60%;
     text-align: center;
     margin-bottom: 2em;
 }
@@ -131,7 +132,7 @@ header.scrolled {
 }
 
 header img {
-    scale: 0.6;
+    scale: 0.45;
 }
 
 .logo-link img {
@@ -161,7 +162,7 @@ header img {
 }
 
 .header-nav ul li:nth-child(2) {
-    margin-left: -6%;
+    margin-left: -9%;
 }
 
 .header-nav > ul > li {
